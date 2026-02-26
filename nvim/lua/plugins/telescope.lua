@@ -8,6 +8,7 @@ return {
     },
     keys = {
       { "<C-u>", "<cmd>Telescope undo<cr>", desc = "Telescope Undo" },
+      { "<leader>,", "<cmd>Telescope buffers sort_mru=true ignore_current_buffer=true<cr>", desc = "Switch Buffer" },
     },
     config = function()
       local telescope = require("telescope")
