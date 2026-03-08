@@ -209,6 +209,13 @@ fnv() {
   fi
 }
 
+# --- Zellij Autostart ---
+if [[ -z "$ZELLIJ" ]]; then
+    # Optional: prevent autostart inside built-in IDE terminals
+    if [[ "$TERM_PROGRAM" != "vscode" && "$TERMINAL_EMULATOR" != "JetBrains-JediTerm" ]]; then
+        exec zellij attach -c main
+    fi
+fi
 # =============================================================================
 # KEY BINDINGS
 # =============================================================================
