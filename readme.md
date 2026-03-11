@@ -54,9 +54,6 @@ git clone https://github.com/yourusername/dotfiles.git ~/.config
 ```bash
 # Core utils
 brew install ripgrep fd fzf bat zoxide
-
-# Tmux specific
-brew install reattach-to-user-namespace
 ```
 
 ### 3. Link Configuration
