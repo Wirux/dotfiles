@@ -53,7 +53,7 @@ git clone https://github.com/yourusername/dotfiles.git ~/.config
 ### 2. Install Dependencies
 ```bash
 # Core utils
-brew install ripgrep fd fzf bat zoxide
+brew install ripgrep fd fzf bat zoxide imagemagick
 ```
 
 ### 3. Link Configuration
