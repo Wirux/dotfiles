@@ -1,6 +1,7 @@
 #!/bin/bash
 TARGET_PANE="$1"
 source ~/.secretsrc
+export AICHAT_CONFIG_DIR="$HOME/.config/aichat"
 
 # Detect shell running in the target pane
 PANE_CMD=$(tmux display-message -p -t "$TARGET_PANE" '#{pane_current_command}')
